@@ -1,0 +1,93 @@
+@import '../../../../scss/stylesheet.scss';
+.modal__logo--wrap {
+    border-radius: 181px;
+    filter: drop-shadow(0 0 30px #8d96b9);
+    background-color: $color-white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 18px 10px;
+    box-sizing: border-box;
+    img {
+        width: 135px;
+        @include bd-lg-bl{
+            width: 50px;
+        }
+    }
+    @include bd-lg-bl{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 99;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    border-radius: 5px;
+    filter: drop-shadow(0 0 27.5px rgba(0, 0, 0, 0.35));
+    background-color: $color-white;
+    position: relative;
+    padding: 125px 40px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include bd-lg-bl{
+        padding: 60px 40px;
+    }
+
+    h2 {
+        @extend .main-heading;
+        color: $color-modal;
+        font-weight: 700;
+        margin-bottom: 20px;
+       
+    }
+
+    .modal__content__text p {
+        font-size: 24px;
+        color: $color-modal-text;
+        font-weight: 400;
+        @include bd-lg-bl{
+            font-size: 14px;
+        }
+    }
+
+    .modal__logo {
+        position: absolute;
+        top: -85px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include bd-lg-bl{
+            top: -40px;
+        }
+    }
+}
+
+.modal__content__text {
+    text-align: center;
+}
+
+.btn-red {
+    border-radius: 5px;
+    background-color: $color-modal;
+    color: $color-white;
+    text-transform: lowercase;
+    @include bd-lg-bl{
+        margin-top: 30px;
+    }
+}
+
+.blocker {
+    position: fixed;
+    background: #121212d1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    overflow-y: hidden;
+}

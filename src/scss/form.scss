@@ -1,0 +1,117 @@
+// input
+.form_input {
+  // border: 1px solid $input-border-clr;
+  position: relative;
+  margin-bottom: 30px !important;
+  border-radius: 10px;
+  .mat-form-field-label {
+    color: $color-white;
+  }
+  .example-full-width {
+    width: 100%;
+  }
+  .mat-input-element {
+    caret-color: $color-white;
+    color: $color-white;
+  }
+}
+// common register box
+.register-wrap {
+  margin-bottom: 50px !important;
+  // z-index: 1;
+  // background: $authentication-sub-bg;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  font-family: "Museo Sans 300";
+  color: $color-white;
+  position: relative;
+  a {
+    text-decoration: none;
+    // color: $color-link;
+  }
+// titles
+  .title {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-family: "Museo Sans 300";
+  }
+  .sub-title {
+    font-weight: normal;
+    font-size: 14px;
+    color: $color-white;
+    margin-bottom: 20px;
+    font-family: "Museo Sans 300";
+  }
+}
+
+.fgt {
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonclass {
+  @include display-flex();
+  @include justify-content(space-between);;
+ @include align-items(center);
+  font-size: 14px;
+}
+.buttonclass button {
+  // background-color: $clr-blue-btn;
+  color: $color-white;
+  font-family: "Museo Sans 300";
+  padding: 2px 33px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.forgot_rem {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 30px;
+  p {
+    color: #bfbfbf;
+  }
+}
+
+//   tooltips
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #222529;
+    color: $color-white;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 10px;
+    border-radius: 6px;
+    position: absolute;
+    margin-left: 30px;
+    z-index: 1;
+    font-family: "Museo Sans 300";
+  }
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+    }
+  }
+}
+
+.icon-pos {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}

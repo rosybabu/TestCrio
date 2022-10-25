@@ -1,0 +1,150 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+pre{
+  white-space: pre-wrap !important;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// @import "../../../../styles.scss";
+.dashboard-row {
+    @include display-flex();
+    // padding: 10px 0px;
+    // background: #3b4044;
+    color: #fff;
+    &:nth-child(odd){
+            background: rgba(48, 53, 57, 0.47);
+        }
+  }
+  .col h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Museo Sans 700";
+    white-space: normal;
+    word-break: break-all;
+}
+.col h6{
+    font-size: 14px;
+    font-family: "Museo Sans 300";
+    opacity: 80%;
+    white-space: normal;
+    word-break: break-all;
+}
+.dashboard-data-hdr{
+    padding: 20px 20px 20px 75px;
+    margin: 16px 0px 0px 0px;
+    background: #303539;
+}
+.col.file-name {
+    width: 24%;
+}
+
+.col.owner {
+    width: 22%;
+}
+
+.col.added-date {
+    width: 19%;
+}
+
+.col.updated-date {
+    width: 24%;
+}
+.dashboard-single-data {
+    padding: 20px 20px 20px 75px !important;
+    @include align-items(center);
+}
+// .btn-grp{
+//     @include display-flex();
+// }
+.edit{
+    margin-right:25px;
+    cursor:pointer;
+}
+.share{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.delete{
+    cursor: pointer;
+}
+.dashboard-tabs {
+    padding: 5px 12px 20px 30px;
+    @include display-flex();
+    @include justify-content(space-between);
+    @include align-items(center);
+    background: #1f2429;
+    ul {
+      li {
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Museo Sans 300";
+        font-size: 14px;
+        padding: 0 18px;
+        outline: none;
+        cursor: pointer;
+      }
+      li.active {
+        // background: $clr-blue-btn;
+        padding: 6px 15px;
+        border-radius: 8px;
+        color: $color-white;
+      }
+    }
+  }
+  .search {
+    input {
+      background: #363a3f;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 7px;
+      min-width: 298px;
+      margin: 0px 0px;
+      font-size: 14px;
+      outline:none;
+      color: #fff
+    }
+  }
+  .toastr-message{
+    font-family: "Museo Sans 300";
+  }

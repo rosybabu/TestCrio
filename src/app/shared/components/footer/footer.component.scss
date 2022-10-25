@@ -1,0 +1,41 @@
+@import '../../../../scss/stylesheet.scss';
+
+.footer__image img {
+    width: 100%;
+}
+
+.footer__row {
+    padding: 130px 0px 80px 0px;
+    text-align: center;
+    @include bd-lg-bl{
+        padding: 60px 15px 50px 15px;
+    }
+    p {
+        font-size: 18px;
+        letter-spacing: 0px;
+        line-height: 18px;
+        color: $color-grey;
+        font-weight: 400;
+    }
+
+    h2 {
+        @extend .main-heading;
+        letter-spacing: 0px;
+        color: $color-black;
+        font-weight: 400;
+        
+    }
+
+    .btn{
+        @include bd-lg-bl{
+            margin-top: 60px;
+        }
+    }
+
+}
+
+.footer__container {
+    position: relative;
+}
+
+

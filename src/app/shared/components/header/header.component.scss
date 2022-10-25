@@ -1,0 +1,82 @@
+@import '../../../../scss/stylesheet.scss';
+
+.header__toggle--wrap,
+.header__search--wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 32.5px #dae5ef);
+    background-color: $color-white;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    img {
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+.header__container {
+    min-height: 200px;
+}
+
+.header__row {
+    @include display-flex();
+    @include justify-content(space-between);;
+   @include align-items(center);
+    padding: 0 20px;
+
+    .header__logo--wrap {
+        @extend .main-heading;
+        letter-spacing: 0px;
+        color: $color-blue;
+        font-weight: 400;
+        text-transform: uppercase;
+        
+    }
+
+
+    .header__logo {
+        text-align: center;
+        position: relative;
+        margin-top: 57px;
+        @include bd-lg-bl {
+            margin-top: 35px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            border-radius: 207px;
+            filter: drop-shadow(0 0 32.5px rgba(218, 229, 239, 0.55));
+            background-color: #ffffff;
+            width: 414px;
+            height: 414px;
+            left: -118px;
+            top: -246px;
+            z-index: -99;
+            padding: 10px 10px;
+            box-sizing: border-box;
+
+            @include bd-lg-bl {
+                width: 200px;
+                height: 329px;
+                left: -14px;
+                top: -233px;
+            }
+
+        }
+
+        h6 {
+            font-size: 18px;
+            letter-spacing: 0px;
+            line-height: 18px;
+            color: $color-grey;
+            font-weight: 700;
+            text-transform: uppercase;
+            @include bd-lg-bl {
+                font-size: 16px;
+            }
+        }
+    }
+}
